@@ -1,0 +1,112 @@
+{
+  "project": "APRA Litigation - David Edward Jackson III v. 12 Defendants",
+  "case_number": "64D01-2512-MI-013832",
+  "court": "Porter County Superior Court",
+  "last_updated": "2026-01-26",
+  "last_session": "Organize exhibits and split litigation",
+
+  "defendants": {
+    "valparaiso_community_schools": {"status": "VERIFIED", "notes": "Sarkisian denial, 62-day timeline confirmed"},
+    "liberty_behavioral_health": {"status": "VERIFIED", "notes": "Montgomery denial, Contract #36951, $13.3M"},
+    "lake_county_clerk": {"status": "VERIFIED", "notes": "Raggs denial, litigation excuse documented"},
+    "porter_county_probation": {"status": "VERIFIED", "notes": "Golumbeck acknowledgment, 13 categories"},
+    "hobart_police_dept": {"status": "VERIFIED", "notes": "No non-exempt denial documented"},
+    "admin_office_lake_county": {"status": "VERIFIED", "notes": "141+ day non-response documented"},
+    "indiana_dept_correction": {"status": "PARTIAL", "notes": "Timeline referenced, need denial letter"},
+    "office_attorney_general": {"status": "NEEDS_VERIFICATION", "notes": "Rachel Stark acknowledgment needed"},
+    "lake_county_prosecutor": {"status": "NEEDS_VERIFICATION", "notes": "Final demand response needed"},
+    "lake_county_adult_probation": {"status": "NEEDS_VERIFICATION", "notes": ""},
+    "indiana_office_judicial_admin": {"status": "NEEDS_VERIFICATION", "notes": ""},
+    "lake_county_sheriff": {"status": "NEEDS_VERIFICATION", "notes": ""}
+  },
+
+  "critical_findings": {
+    "mandatory_reporting_violation": {
+      "status": "DOCUMENTED",
+      "perpetrators": ["Detective Robert Brazil", "Victim Advocate Rochelle Ellis"],
+      "date": "2018-03-16",
+      "concealed_perpetrator": "Jaden (cousin, Wisconsin, age 13-18)",
+      "evidence": "Recorded Interview SRT transcript 10:20-11:07",
+      "quote": "I will make sure that it's between me and you and Rochelle. And that's it",
+      "violations": ["IC 31-33-5-1", "Brady", "Class B misdemeanor"]
+    },
+    "perpetrator_substitution": {
+      "status": "DOCUMENTED",
+      "evidence": "Detective Brazil transcript 06:01-06:28",
+      "quote": "did those events happen, or did they be amassed by what happened with Jayden?",
+      "significance": "Detective considered confusion but never disclosed to defense"
+    },
+    "racial_discrimination": {
+      "status": "DOCUMENTED",
+      "plaintiff_demographics": "Person of color, Latino/Puerto Rican heritage",
+      "pattern_evidence": ["NAACP investigation Oct 2022", "Officer racial remarks investigation June 2020"],
+      "selective_prosecution": "Jaden protected, David prosecuted"
+    },
+    "jurisdictional_void": {
+      "status": "NEEDS_INVESTIGATION",
+      "issue": "Porter County never accepted probation transfer",
+      "documents_needed": ["Plea Agreement Nov 2021", "Sentencing Order Nov 2021", "Porter County docket/CCS"],
+      "significance": "Revocation based on conditions requiring acceptance that never occurred"
+    },
+    "kastigar_immunity": {
+      "status": "NEEDS_INVESTIGATION",
+      "issue": "Immunity agreement has use and derivative use protection",
+      "documents_needed": ["Immunity Agreement", "Court order prohibiting use of information"],
+      "significance": "Prosecutor may have violated court order"
+    }
+  },
+
+  "pending_searches": [
+    {"id": 1, "query": "Nadia Wardrip transcript email family civil custody", "purpose": "Family case interference", "status": "pending"},
+    {"id": 2, "query": "Jacob Otto transcript email family civil", "purpose": "Family case interference", "status": "pending"},
+    {"id": 3, "query": "immunity agreement Kastigar use derivative", "purpose": "Find immunity protections", "status": "pending"},
+    {"id": 4, "query": "court order prosecutor NOT use information", "purpose": "Find restriction order", "status": "pending"},
+    {"id": 5, "query": "plea agreement November 2021 Porter County transfer", "purpose": "Find plea inducement", "status": "pending"},
+    {"id": 6, "query": "sentencing order November 2021", "purpose": "Find transfer promise", "status": "pending"},
+    {"id": 7, "query": "Porter County docket CCS Mycase transfer acceptance", "purpose": "Prove non-acceptance", "status": "pending"},
+    {"id": 8, "query": "Rachel Stark Attorney General acknowledgment August", "purpose": "OAG verification", "status": "pending"}
+  ],
+
+  "completed_tasks": [
+    "Created project folder structure C:\\APRA_Litigation",
+    "Configured filesystem MCP server",
+    "Configured memory-service MCP server",
+    "Ingested 313 exhibits into SQLite database",
+    "Created exhibit search scripts",
+    "Extracted and analyzed complaint document",
+    "Initial cross-reference of claims vs exhibits",
+    "Documented mandatory reporting violation (Brazil/Ellis)",
+    "Documented perpetrator substitution theory",
+    "Documented racial discrimination pattern",
+    "Stored critical findings to memory-service"
+  ],
+
+  "pending_tasks": [
+    "Search for Nadia Wardrip transcripts and emails",
+    "Search for Jacob Otto transcripts and emails",
+    "Find and analyze immunity agreement",
+    "Find court order on information use prohibition",
+    "Find Plea Agreement November 2021",
+    "Find Sentencing Order November 2021",
+    "Find Porter County docket proving non-acceptance",
+    "Complete verification for 6 remaining defendants",
+    "Process 25 scanned PDFs needing OCR"
+  ],
+
+  "database_info": {
+    "path": "C:\\APRA_Litigation\\Memory\\memories.db",
+    "total_records": 313,
+    "successfully_processed": 288,
+    "needs_manual_review": 25,
+    "total_characters": 4272530
+  },
+
+  "file_locations": {
+    "complaint": "C:\\APRA_Litigation\\Filings\\PLAINTIFF'S APRA COMPLAINT AND FILINGS.docx",
+    "complaint_text": "C:\\APRA_Litigation\\Filings\\complaint_lines.txt",
+    "database": "C:\\APRA_Litigation\\Memory\\memories.db",
+    "inventory": "C:\\APRA_Litigation\\exhibit_inventory.csv",
+    "failed_report": "C:\\APRA_Litigation\\failed_ingest_report.txt",
+    "scripts": "C:\\APRA_Litigation\\Scripts\\"
+  }
+}
