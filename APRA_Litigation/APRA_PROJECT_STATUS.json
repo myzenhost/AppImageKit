@@ -99,7 +99,9 @@
     "Created session continuity system (CLAUDE_SESSION_GUIDE.md, MCP_CONFIGURATION.md)",
     "Created search scripts (search_all_pending.py, read_exhibit.py)",
     "Configured large-file MCP server for handling oversized PDFs",
-    "Identified Z:\\ClaudeAI\\PROTOCOLS and Z:\\ClaudeAI\\LEGAL_DOCUMENTS need verification"
+    "Identified Z:\\ClaudeAI\\PROTOCOLS and Z:\\ClaudeAI\\LEGAL_DOCUMENTS need verification",
+    "Organized all tracking files into APRA_Litigation project subfolder",
+    "Created CLAUDE.md for APRA project and root directory"
   ],
 
   "pending_tasks": [
@@ -114,7 +116,7 @@
     "Process 25 scanned PDFs needing OCR",
     "Review and verify Z:\\ClaudeAI\\PROTOCOLS\\ (prior session had hallucinations)",
     "Review and verify Z:\\ClaudeAI\\LEGAL_DOCUMENTS\\ (prior session had hallucinations)",
-    "Copy tracking files from git repo to C:\\APRA_Litigation\\"
+    "Copy tracking files to C:\\APRA_Litigation\\ (use Desktop Commander)"
   ],
 
   "database_info": {
@@ -132,10 +134,12 @@
     "inventory": "C:\\APRA_Litigation\\exhibit_inventory.csv",
     "failed_report": "C:\\APRA_Litigation\\failed_ingest_report.txt",
     "scripts": "C:\\APRA_Litigation\\Scripts\\",
-    "verified_legal_research": "VERIFIED_LEGAL_RESEARCH.md (in git repo)",
-    "session_guide": "CLAUDE_SESSION_GUIDE.md (in git repo)",
-    "mcp_config_docs": "MCP_CONFIGURATION.md (in git repo)",
-    "new_session_prompt": "NEW_SESSION_PROMPT.txt (in git repo)"
+    "verified_legal_research": "./APRA_Litigation/Verified_Facts/VERIFIED_LEGAL_RESEARCH.md",
+    "session_guide": "./APRA_Litigation/CLAUDE_SESSION_GUIDE.md",
+    "mcp_config_docs": "./APRA_Litigation/MCP_CONFIGURATION.md",
+    "new_session_prompt": "./APRA_Litigation/NEW_SESSION_PROMPT.txt",
+    "session_logs": "./APRA_Litigation/Session_Logs/",
+    "project_claude_md": "./APRA_Litigation/CLAUDE.md"
   },
 
   "additional_resources": {
