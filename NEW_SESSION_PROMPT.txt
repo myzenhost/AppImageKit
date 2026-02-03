@@ -1,0 +1,134 @@
+## APRA LITIGATION PROJECT - SESSION INITIALIZATION
+
+**Case**: David Edward Jackson III v. 12 Defendants
+**Cause No.**: 64D01-2512-MI-013832 (Porter County Superior Court)
+
+---
+
+## STEP 1: READ PROJECT STATUS
+
+Before doing anything else, read these files:
+
+1. Read: C:\APRA_Litigation\APRA_PROJECT_STATUS.json
+2. List: C:\APRA_Litigation\Verified_Facts\
+3. Search memory for: "mandatory reporting violation", "perpetrator substitution", "jurisdictional void", "Kastigar immunity"
+
+---
+
+## STEP 2: AVAILABLE TOOLS
+
+| Tool | Purpose |
+|------|---------|
+| memory-service | Search/store exhibit data (313 exhibits, 4.3M+ chars) |
+| filesystem | Read files from C:\APRA_Litigation and Desktop |
+| large-file | Handle large PDFs without freezing |
+| PDF Tools | Analyze, extract, fill, compare PDFs |
+| Desktop Commander | Run PowerShell commands |
+
+Database: C:\APRA_Litigation\Memory\memories.db (SQLite, table: exhibits)
+Schema: id, hash, filename, filepath, content, content_preview, file_type, size_kb, tags, created_date, ingested_date, page_count
+
+---
+
+## STEP 3: WHAT HAS BEEN DONE
+
+### Completed:
+- 313 exhibits ingested into memory-service database
+- Complaint document extracted and analyzed
+- Initial cross-reference: 6 defendants verified, 6 need verification
+- Mandatory reporting violation documented (Detective Brazil + Rochelle Ellis)
+- Perpetrator substitution theory documented
+- Racial discrimination pattern documented (NAACP investigation, officer remarks)
+- Legal research verified: IC 31-33-5-1, Kastigar, Brady, Yick Wo, IC 35-38-2-1(e), Rule 22(C), 42 USC 1983
+- Created VERIFIED_LEGAL_RESEARCH.md with all citations
+
+### Verified Defendants:
+- Valparaiso Community Schools (Sarkisian denial, 62-day timeline)
+- Liberty Behavioral Health (Montgomery denial, Contract #36951)
+- Lake County Clerk (Raggs denial, litigation excuse)
+- Porter County Probation (Golumbeck acknowledgment)
+- Hobart Police Dept ("no non-exempt" denial)
+- Admin Office Lake County (141+ day non-response)
+
+---
+
+## STEP 4: WHAT NEEDS TO BE DONE
+
+### Pending Searches (use memory-service):
+1. "Nadia Wardrip" - family case interference
+2. "Jacob Otto" - family case interference
+3. "immunity agreement" + "Kastigar" - use/derivative use
+4. "plea agreement November 2021" - Porter County transfer
+5. "sentencing order November 2021" - transfer inducement
+6. "Porter County docket" + "CCS" - proves transfer never accepted
+7. "Rachel Stark" - OAG acknowledgment
+
+### Defendants Needing Verification:
+- Indiana Dept of Correction (need denial letter)
+- Office of Attorney General (Rachel Stark acknowledgment)
+- Lake County Prosecutor (final demand response)
+- Lake County Adult Probation
+- Indiana Office of Judicial Admin
+- Lake County Sheriff
+
+### Key Legal Issues to Investigate:
+1. **Jurisdictional Void**: Porter County never accepted probation transfer per IC 35-38-2-1(e) and Rule 22(C)
+2. **Kastigar Immunity**: Use + derivative use protection; court ordered prosecutor NOT to use information
+3. **Family Case Interference**: Wardrip/Otto actions in civil custody case
+
+### Other Tasks:
+- Process 25 scanned PDFs needing OCR (use PDF Tools or large-file MCP)
+- Review Z:\ClaudeAI\PROTOCOLS\ (UNVERIFIED - prior session had hallucinations)
+- Review Z:\ClaudeAI\LEGAL_DOCUMENTS\ (UNVERIFIED - prior session had hallucinations)
+
+---
+
+## STEP 5: KEY FILE LOCATIONS
+
+| File | Path |
+|------|------|
+| Project Status | C:\APRA_Litigation\APRA_PROJECT_STATUS.json |
+| Database | C:\APRA_Litigation\Memory\memories.db |
+| Complaint | C:\APRA_Litigation\Filings\PLAINTIFF'S APRA COMPLAINT AND FILINGS.docx |
+| Complaint (text) | C:\APRA_Litigation\Filings\complaint_lines.txt |
+| Scripts | C:\APRA_Litigation\Scripts\ |
+| Search Results | C:\APRA_Litigation\Search_Results\ |
+| Verified Facts | C:\APRA_Litigation\Verified_Facts\ |
+| Exhibit Inventory | C:\APRA_Litigation\exhibit_inventory.csv |
+| Failed Files | C:\APRA_Litigation\failed_ingest_report.txt |
+| Unverified Protocols | Z:\ClaudeAI\PROTOCOLS\ |
+| Unverified Legal Docs | Z:\ClaudeAI\LEGAL_DOCUMENTS\ |
+
+---
+
+## STEP 6: SESSION HANDOFF PROTOCOL (MANDATORY)
+
+### BEFORE ENDING THIS SESSION, YOU MUST:
+
+1. **Update C:\APRA_Litigation\APRA_PROJECT_STATUS.json**:
+   - Move completed items from pending_tasks to completed_tasks
+   - Update pending_searches status (found/not_found)
+   - Add new findings to critical_findings
+   - Update last_updated timestamp and last_session name
+
+2. **Store findings to memory-service**:
+   All important discoveries must be stored with clear descriptive text
+
+3. **Save session summary to**:
+   C:\APRA_Litigation\Verified_Facts\session_[DATE]_[DESCRIPTION].txt
+
+4. **If you verified items from Z:\ClaudeAI\**:
+   Note what was verified vs flagged as potentially fabricated
+
+### WHEN STARTING A NEW SESSION:
+- Read C:\APRA_Litigation\APRA_PROJECT_STATUS.json FIRST
+- Search memory-service for prior findings
+- Check C:\APRA_Litigation\Verified_Facts\ for session summaries
+- Continue pending tasks from status file
+- Follow same handoff protocol when ending
+
+---
+
+## STEP 7: BEGIN WORK
+
+Tell me what to focus on, or I will start with the pending searches.

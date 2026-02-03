@@ -2,8 +2,8 @@
   "project": "APRA Litigation - David Edward Jackson III v. 12 Defendants",
   "case_number": "64D01-2512-MI-013832",
   "court": "Porter County Superior Court",
-  "last_updated": "2026-01-26",
-  "last_session": "Organize exhibits and split litigation",
+  "last_updated": "2026-01-26T12:04:00",
+  "last_session": "Organize exhibits and split litigation (session 2 - legal research)",
 
   "defendants": {
     "valparaiso_community_schools": {"status": "VERIFIED", "notes": "Sarkisian denial, 62-day timeline confirmed"},
@@ -52,7 +52,16 @@
       "status": "NEEDS_INVESTIGATION",
       "issue": "Immunity agreement has use and derivative use protection",
       "documents_needed": ["Immunity Agreement", "Court order prohibiting use of information"],
-      "significance": "Prosecutor may have violated court order"
+      "significance": "Prosecutor may have violated court order",
+      "legal_research_verified": true,
+      "case_law": "Kastigar v. United States, 406 U.S. 441 (1972)",
+      "key_rule": "Prosecution must prove affirmatively evidence is from source wholly independent of compelled testimony"
+    },
+    "family_case_interference": {
+      "status": "NEEDS_INVESTIGATION",
+      "issue": "Prosecutor Nadia Wardrip and Jacob Otto actions in civil custody case",
+      "documents_needed": ["Wardrip transcripts", "Wardrip emails", "Otto transcripts", "Otto emails"],
+      "significance": "Potential prosecutorial misconduct extending into civil proceedings"
     }
   },
 
@@ -78,7 +87,19 @@
     "Documented mandatory reporting violation (Brazil/Ellis)",
     "Documented perpetrator substitution theory",
     "Documented racial discrimination pattern",
-    "Stored critical findings to memory-service"
+    "Stored critical findings to memory-service",
+    "Verified IC 31-33-5-1 mandatory reporting statute via web search",
+    "Verified Kastigar v. United States use/derivative use doctrine",
+    "Verified IC 35-38-2-1(e) probation transfer concurrence requirement",
+    "Verified Criminal Rule 22(C) receiving court consent requirement",
+    "Verified Brady v. Maryland disclosure obligations",
+    "Verified Yick Wo v. Hopkins selective prosecution doctrine",
+    "Verified 42 U.S.C. 1983 civil rights claim elements",
+    "Created VERIFIED_LEGAL_RESEARCH.md with all citations and sources",
+    "Created session continuity system (CLAUDE_SESSION_GUIDE.md, MCP_CONFIGURATION.md)",
+    "Created search scripts (search_all_pending.py, read_exhibit.py)",
+    "Configured large-file MCP server for handling oversized PDFs",
+    "Identified Z:\\ClaudeAI\\PROTOCOLS and Z:\\ClaudeAI\\LEGAL_DOCUMENTS need verification"
   ],
 
   "pending_tasks": [
@@ -90,7 +111,10 @@
     "Find Sentencing Order November 2021",
     "Find Porter County docket proving non-acceptance",
     "Complete verification for 6 remaining defendants",
-    "Process 25 scanned PDFs needing OCR"
+    "Process 25 scanned PDFs needing OCR",
+    "Review and verify Z:\\ClaudeAI\\PROTOCOLS\\ (prior session had hallucinations)",
+    "Review and verify Z:\\ClaudeAI\\LEGAL_DOCUMENTS\\ (prior session had hallucinations)",
+    "Copy tracking files from git repo to C:\\APRA_Litigation\\"
   ],
 
   "database_info": {
@@ -107,6 +131,29 @@
     "database": "C:\\APRA_Litigation\\Memory\\memories.db",
     "inventory": "C:\\APRA_Litigation\\exhibit_inventory.csv",
     "failed_report": "C:\\APRA_Litigation\\failed_ingest_report.txt",
-    "scripts": "C:\\APRA_Litigation\\Scripts\\"
+    "scripts": "C:\\APRA_Litigation\\Scripts\\",
+    "verified_legal_research": "VERIFIED_LEGAL_RESEARCH.md (in git repo)",
+    "session_guide": "CLAUDE_SESSION_GUIDE.md (in git repo)",
+    "mcp_config_docs": "MCP_CONFIGURATION.md (in git repo)",
+    "new_session_prompt": "NEW_SESSION_PROMPT.txt (in git repo)"
+  },
+
+  "additional_resources": {
+    "unverified_protocols": "Z:\\ClaudeAI\\PROTOCOLS\\",
+    "unverified_legal_docs": "Z:\\ClaudeAI\\LEGAL_DOCUMENTS\\",
+    "warning": "Created by prior Claude Chat session with context loss and hallucinations - ALL content must be verified"
+  },
+
+  "mcp_servers": {
+    "filesystem": {"status": "running", "access": ["C:\\APRA_Litigation", "C:\\Users\\Avatar\\Desktop"]},
+    "memory_service": {"status": "running", "database": "C:\\APRA_Litigation\\Memory\\memories.db"},
+    "large_file": {"status": "running", "package": "@willianpinho/large-file-mcp"},
+    "desktop_commander": {"status": "running", "type": "extension"},
+    "pdf_tools": {"status": "available", "capabilities": ["analyze", "extract", "fill", "compare"]}
+  },
+
+  "session_handoff": {
+    "instructions": "Before ending ANY session: 1) Update this file, 2) Store findings to memory-service, 3) Save summary to Verified_Facts folder",
+    "new_session_start": "Read APRA_PROJECT_STATUS.json first, then search memory-service for prior findings"
   }
 }
