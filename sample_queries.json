@@ -1,0 +1,176 @@
+{
+  "queries": [
+    {
+      "id": 1,
+      "category": "contracts",
+      "question": "What are the indemnification clauses in the contract?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "category": "contracts",
+      "question": "What is the termination notice period?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "category": "contracts",
+      "question": "What are the liability limitations?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "category": "contracts",
+      "question": "What governing law applies to this agreement?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "medium"
+    },
+    {
+      "id": 5,
+      "category": "contracts",
+      "question": "What are the payment terms and conditions?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "high"
+    },
+    {
+      "id": 6,
+      "category": "contracts",
+      "question": "What are the confidentiality obligations?",
+      "expected_documents": ["contract", "agreement", "nda"],
+      "priority": "high"
+    },
+    {
+      "id": 7,
+      "category": "contracts",
+      "question": "What are the intellectual property rights provisions?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "high"
+    },
+    {
+      "id": 8,
+      "category": "contracts",
+      "question": "What are the dispute resolution procedures?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "medium"
+    },
+    {
+      "id": 9,
+      "category": "contracts",
+      "question": "What are the conditions for contract renewal?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "medium"
+    },
+    {
+      "id": 10,
+      "category": "contracts",
+      "question": "What warranties are provided?",
+      "expected_documents": ["contract", "agreement"],
+      "priority": "high"
+    },
+    {
+      "id": 11,
+      "category": "compliance",
+      "question": "What are the data privacy requirements?",
+      "expected_documents": ["privacy", "compliance", "gdpr"],
+      "priority": "high"
+    },
+    {
+      "id": 12,
+      "category": "compliance",
+      "question": "What are the data retention policies?",
+      "expected_documents": ["privacy", "compliance", "policy"],
+      "priority": "high"
+    },
+    {
+      "id": 13,
+      "category": "compliance",
+      "question": "What are the security requirements?",
+      "expected_documents": ["security", "compliance"],
+      "priority": "high"
+    },
+    {
+      "id": 14,
+      "category": "compliance",
+      "question": "What are the audit and inspection rights?",
+      "expected_documents": ["compliance", "contract"],
+      "priority": "medium"
+    },
+    {
+      "id": 15,
+      "category": "case_law",
+      "question": "What legal precedents apply to this situation?",
+      "expected_documents": ["case", "precedent"],
+      "priority": "high"
+    },
+    {
+      "id": 16,
+      "category": "case_law",
+      "question": "What was the court's reasoning in similar cases?",
+      "expected_documents": ["case", "opinion"],
+      "priority": "high"
+    },
+    {
+      "id": 17,
+      "category": "case_law",
+      "question": "What damages were awarded in comparable cases?",
+      "expected_documents": ["case", "judgment"],
+      "priority": "medium"
+    },
+    {
+      "id": 18,
+      "category": "policy",
+      "question": "What is the employee termination policy?",
+      "expected_documents": ["policy", "handbook", "employment"],
+      "priority": "high"
+    },
+    {
+      "id": 19,
+      "category": "policy",
+      "question": "What are the acceptable use policies?",
+      "expected_documents": ["policy", "aup"],
+      "priority": "medium"
+    },
+    {
+      "id": 20,
+      "category": "policy",
+      "question": "What is the whistleblower protection policy?",
+      "expected_documents": ["policy", "compliance"],
+      "priority": "medium"
+    }
+  ],
+  "batch_processing_example": [
+    {
+      "batch_id": "contract_review_001",
+      "case_id": "CAS-2024-001",
+      "questions": [
+        "What is the contract effective date?",
+        "Who are the parties to the agreement?",
+        "What is the contract duration?",
+        "What are the termination provisions?",
+        "What are the renewal terms?"
+      ]
+    },
+    {
+      "batch_id": "compliance_audit_001",
+      "case_id": "AUD-2024-001",
+      "questions": [
+        "What personal data is collected?",
+        "What is the legal basis for processing?",
+        "How long is data retained?",
+        "What are the data subject rights?",
+        "Who are the data processors?"
+      ]
+    }
+  ],
+  "usage_notes": [
+    "This file contains sample queries for testing the Legal RAG system",
+    "Modify questions to match your specific document corpus",
+    "Use 'category' to organize queries by legal topic",
+    "Use 'priority' to flag critical queries requiring human review",
+    "Use 'expected_documents' to validate retrieval quality",
+    "Batch processing examples show how to process multiple related queries"
+  ]
+}
