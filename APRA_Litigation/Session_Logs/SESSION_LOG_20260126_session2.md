@@ -66,8 +66,25 @@ All citations verified via web search:
 - User needs to start new session from C:\APRA_Litigation to get MCP access
 - New session should use large-file MCP for oversized PDFs
 
+## Additional Files Created After Initial Log
+| File | Purpose |
+|------|---------|
+| CRITICAL_FINDINGS_COMPILED.md | Detailed findings with quotes, timestamps, evidence refs |
+| CLAUDE.md (root) | Root project index pointing to APRA |
+| CLAUDE.md (APRA) | Full project guide with structure and rules |
+
+## Frozen Session Detailed Analysis
+The "List files in APRA Litigation Exhibits" session discovered:
+1. **Mandatory Reporting Violation** - Full transcript quotes at 10:20-11:07 and 10:51-11:07
+2. **Perpetrator Substitution** - Detective Brazil's question at 06:01-06:28
+3. **Racial Discrimination** - NAACP investigation, officer racial remarks
+4. **Found 7 Wardrip/Otto files** but couldn't read (PDF too large)
+5. **Froze** before finding immunity agreement, plea agreement, Porter County docket
+6. All details preserved in Verified_Facts/CRITICAL_FINDINGS_COMPILED.md
+
 ## Handoff Notes
-- All files committed to git: claude/organize-exhibits-litigation-y3uT2
-- User should copy relevant files to C:\APRA_Litigation
-- New session should read APRA_PROJECT_STATUS.json first
-- New session should use master prompt from NEW_SESSION_PROMPT.txt
+- All files organized in APRA_Litigation/ subfolder
+- New session should read APRA_Litigation/CLAUDE.md then APRA_PROJECT_STATUS.json
+- New session should use NEW_SESSION_PROMPT.txt for full context
+- User's Windows files at C:\APRA_Litigation\ accessible via MCP in local sessions
+- User also has unverified resources at Z:\ClaudeAI\ that need review

@@ -139,7 +139,8 @@
     "mcp_config_docs": "./APRA_Litigation/MCP_CONFIGURATION.md",
     "new_session_prompt": "./APRA_Litigation/NEW_SESSION_PROMPT.txt",
     "session_logs": "./APRA_Litigation/Session_Logs/",
-    "project_claude_md": "./APRA_Litigation/CLAUDE.md"
+    "project_claude_md": "./APRA_Litigation/CLAUDE.md",
+    "critical_findings_compiled": "./APRA_Litigation/Verified_Facts/CRITICAL_FINDINGS_COMPILED.md"
   },
 
   "additional_resources": {
